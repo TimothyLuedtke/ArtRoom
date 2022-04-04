@@ -11,8 +11,16 @@
     <title>artRoom Home Staging</title>
 </head>
 <body>
+
+<section class=" bg-header"   style="background-image: url('images/headerPhoto.jpg'); background-repeat: no-repeat;
+ background-position: center center;
+ background-attachment: fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; ">   
 <!--Nav-->  
-    <nav class="navbar navbar-dropdown navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-dropdown navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">          
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,25 +46,25 @@
 
                 </ul>
 
-            <div class="navbar-buttons"><a class="btn btn-primary" href="#contactUs">Contact</a> </div>
+            <div class="navbar-buttons"><a class="btn btn-warning" href="#contactUs">Contact</a> </div>
         </div>
     </nav>
 
     <!--header-->      
     <section class="container-fluid">
-        <img class=" img-fluid" src="images/headerPhoto.jpg">
-        <div>
-            <div class=" row justify-content-center">
+        
+        <div >
+            <div class="row justify-content-center"  >
 
-                <div class=" col-md-6 text-center">
-                    <h1 class="display-1" >artRoom</h1>
+                <div class=" m-3 col-md-6 text-center text-light">
+                    <h1 class="m-5 display-1" >artRoom</h1>
                     <h4>A Twin Cities Residential Staging Company</h4>
                     <p><strong>Our mission</strong> is to help clients navigate options for marketing their home to maximize their overall profit.</p>
-                    <div class=" mt-3">
+                    <div class=" m-3">
                         <a class="btn btn-warning" href=#contactUs>
                             Contact
                         </a> 
-                        <a class="btn btn-white-outline" href=#processOverview>
+                        <a class="btn btn-white-outline text-light" href=#processOverview>
                             learn more &gt;
                         </a>
                     </div>      
@@ -65,92 +73,99 @@
         </div>    
     </section>
 
+</section>    
+
     <!--Process Overview Timeline-->
-    <section class="container my-4 mb-4 rounded" id="processOverview">        
+    <section class="container overflow-hidden" id="processOverview">        
         <!--Process Title-->
-        <div class="row py-4 my-4 text-center">
-            <h1 class="display-3" >Process</h1>
-            <h5>Reflecting uniqueness in every home.</h5>                    
+        <div class="row pt-4 pb-2 my-4 text-center">
+            <h1 class="display-3 text-capitalize" >Process</h1>
+            <h5 class="display-6">Reflecting Uniqueness in every home.</h5>                    
         </div>
-        <!--Arrow Down-->
-        <div>
-            <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
-        </div>
-        <!--Consult Step-->
-        <div class="row justify-content-center align-items-center bg-light rounded my-4 pe-md-4">            
-            <div class="col-4 py-4 px-md-4">  
-                <img class="img-fluid rounded-circle" src="images/processPhoto1.jpg" alt="Consultation Photo">
+        
+        <div class="row justify-content-around">
+            <!--Consult Step-->            
+            <div class="col-sm-12 col-md-4">
+                <div class="m-2 bg-light rounded pb-4">            
+                    <div class="py-4 d-flex justify-content-center">   
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto1.jpg" alt="Consultation Photo">
+                    </div>
+
+                    <div>    
+                        <div class="text-center ">
+                            <h2 class="display-4">Consultation</h2>
+                            <h5 class="pb-2">Plan the stage</h5>
+                            <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#consultDetail">details</button>
+                        </div>
+                        <div id="consultDetail" class="collapse p-4 pb-0">
+                            <p>Is the home empty?</p>
+                            <p>Do you still live in your home?</p>                        
+                            <p>Prefer a partial stage?</p>                               
+                            <p>There are a ton of ways to get a home prepared for market, 
+                                and a different levels of work each requires.
+                            We understand what's best for you is a number of conversations.
+                             We'll customize a plan with your specific needs in mind.
+                             </p>
+                        </div>
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-sm-9 col-md-8 text-center px-md-4">    
-                <div class="text-center px-md-4">
-                    <h2 class="display-4">Consultation</h2>
-                    <h5 >Organize preparations for staging.</h5>
-                    <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#consultDetail">details</button>
-                </div>
-                <div id="consultDetail" class="collapse mb-4">
-                    <p>Is the home empty?</p>
-                    <p>Do you still live in your home?</p>                        
-                    <p>Prefer a partial stage?</p>                               
-                    <p>There are a ton of ways to get a home prepared for market, 
-                        and a different levels of work each requires.
-                    We understand what's best for you is a number of conversations.
-                     We'll customize a plan with your specific needs in mind.
-                     </p>
-                </div>
-            </div>
-        </div>
-        <!--Arrow Down-->
-        <div>
-            <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
-        </div>
-        <!--Prep Step-->
-        <div class="row justify-content-center align-items-center bg-light rounded my-4 pe-md-4">            
-            <div class="col-4 py-4 px-md-4">  
-                <img class="img-fluid rounded-circle" src="images/processPhoto2.jpg" alt="Preperation Photo">
+            <!--Prep Step-->
+            <div class="col-sm-12 col-md-4">
+                <div class="m-2 pb-4 bg-light rounded">              
+                    <div class="py-4 d-flex justify-content-center">   
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto2.jpg" alt="Preperation Photo">
+                    </div>
+
+                    <div class="text-center">    
+                        <div class="">
+                            <h2 class="display-4">Preparation</h2>
+                            <h5 class="pb-2">Set the stage</h5>
+                            <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#prepDetail">details</button>
+                        </div>
+
+                        <div id="prepDetail" class="collapse p-4 pb-0">
+                            <p>Most of the items on this checklist will come directly from our earlier conversations.</p> 
+                            <p>There are steps that are always necessary before selling including decluttering and cleaning.</p>
+                            <p>You may choose to take on tasks yourself or ask us to use our vast network of industry professionals. 
+                            From cleaning to painting, we're happy to help.</p>
+                        </div>
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-sm-9 col-md-8 text-center px-md-4">    
-                <div class="px-md-4">
-                    <h2 class="display-4">Preparation</h2>
-                    <h5 class="">Complete preparations for staging.</h5>
-                    <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#prepDetail">details</button>
-                </div>
-                
-                <div id="prepDetail" class="collapse mb-4">
-                    <p>Most of the items on this checklist will come directly from our earlier conversations.</p> 
-                    <p>There are steps that are always necessary before selling including decluttering and cleaning.</p>
-                    <p>You may choose to take on tasks yourself or ask us to use our vast network of industry professionals. 
-                    From cleaning to painting, we're happy to help.</p>
-                </div>
-            </div>
-        </div>
-        <!--Arrow Down-->
-        <div>
-            <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
-        </div>
-        <!--Staging Step-->
-        <div class="row justify-content-center align-items-center bg-light rounded my-4 pe-md-4">            
-            <div class="col-4 py-4 px-md-4">  
-                <img class="img-fluid rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
+            <!--Staging Step-->
+            <div class="col-sm-12 col-md-4">
+                <div class="m-2 pb-4 bg-light rounded">              
+                    <div class="py-4 d-flex justify-content-center">  
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
+                    </div>
+
+                    <div class="text-center">    
+                        <div class="">
+                            <h2 class="display-4">Staging</h2>
+                            <h5 class="pb-2">Stage</h5> 
+                            <button class="btn btn-outline-secondary text-muted" type="button" data-bs-toggle="collapse" data-bs-target="#stagingDetail">details</button>                           
+                        </div>
+                        <div id="stagingDetail" class="collapse p-4 pb-0">
+                            <p>The finish line is so close!</p>                       
+                            <p>We'll bring in our crew to get the house looking perfect and take care of everything along the way.</p>
+                        </div>                        
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-sm-9 col-md-8 text-center px-md-4">    
-                <div class="px-md-4">
-                    <h2 class="display-4">Staging</h2>
-                    <h5 class="">Sit back and give us the space to work our magic.</h5> 
-                    <button class="btn btn-outline-secondary text-muted" type="button" data-bs-toggle="collapse" data-bs-target="#stagingDetail">details</button>                           
-                </div>
-                <div id="stagingDetail" class="collapse mb-4">
-                    <p>The finish line is so close!</p>                       
-                    <p>We'll bring in our crew to get the house looking perfect and take care of everything along the way.</p>
-                </div>                        
-            </div>
-        </div>        
+        </div>
     </section>
 
+            <!--Arrow Down-->
+           <!-- <div>
+                <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
+            </div> -->
+
     <!--Portfolio Carousel Section-->
-    <section class="container-fluid g-0" id="portfolioCarousel">
+    <section class="container-fluid g-0 my-4" id="portfolioCarousel">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
