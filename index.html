@@ -85,7 +85,7 @@ background-size: cover; ">
         
         <div class="row justify-content-around">
             <!--Consult Step-->            
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4" id="consultDetail">
                 <div class="m-2 bg-light rounded pb-4">            
                     <div class="py-4 d-flex justify-content-center">   
                         <img class="img-fluid w-50 rounded-circle" src="images/processPhoto1.jpg" alt="Consultation Photo">
@@ -94,10 +94,10 @@ background-size: cover; ">
                     <div>    
                         <div class="text-center ">
                             <h2 class="display-4">Consultation</h2>
-                            <h5 class="pb-2">Plan the stage</h5>
-                            <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#consultDetail">details</button>
+                            <h5 class="py-2">Plan the stage</h5>
+                            <div type="button"  data-bs-toggle="collapse" data-bs-target="#consultDropdown"><i class="fa-solid fa-angle-down"></i></div>
                         </div>
-                        <div id="consultDetail" class="collapse p-4 pb-0">
+                        <div id="consultDropdown" class="collapse p-4 pb-0">
                             <p>Is the home empty?</p>
                             <p>Do you still live in your home?</p>                        
                             <p>Prefer a partial stage?</p>                               
@@ -112,7 +112,7 @@ background-size: cover; ">
             </div>
 
             <!--Prep Step-->
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4" id="prepDetail">
                 <div class="m-2 pb-4 bg-light rounded">              
                     <div class="py-4 d-flex justify-content-center">   
                         <img class="img-fluid w-50 rounded-circle" src="images/processPhoto2.jpg" alt="Preperation Photo">
@@ -121,11 +121,11 @@ background-size: cover; ">
                     <div class="text-center">    
                         <div class="">
                             <h2 class="display-4">Preparation</h2>
-                            <h5 class="pb-2">Set the stage</h5>
-                            <button class="btn btn-outline-secondary text-muted" type="button"  data-bs-toggle="collapse" data-bs-target="#prepDetail">details</button>
+                            <h5 class="py-2">Set the stage</h5>
+                            <div type="button"  data-bs-toggle="collapse" data-bs-target="#prepDropdown"><i class="fa-solid fa-angle-down"></i></div>
                         </div>
 
-                        <div id="prepDetail" class="collapse p-4 pb-0">
+                        <div id="prepDropdown" class="collapse p-4 pb-0">
                             <p>Most of the items on this checklist will come directly from our earlier conversations.</p> 
                             <p>There are steps that are always necessary before selling including decluttering and cleaning.</p>
                             <p>You may choose to take on tasks yourself or ask us to use our vast network of industry professionals. 
@@ -136,7 +136,7 @@ background-size: cover; ">
             </div>
 
             <!--Staging Step-->
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4" id="stagingDetail">
                 <div class="m-2 pb-4 bg-light rounded">              
                     <div class="py-4 d-flex justify-content-center">  
                         <img class="img-fluid w-50 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
@@ -145,10 +145,10 @@ background-size: cover; ">
                     <div class="text-center">    
                         <div class="">
                             <h2 class="display-4">Staging</h2>
-                            <h5 class="pb-2">Stage</h5> 
-                            <button class="btn btn-outline-secondary text-muted" type="button" data-bs-toggle="collapse" data-bs-target="#stagingDetail">details</button>                           
+                            <h5 class="py-2">Stage</h5> 
+                            <div type="button" data-bs-toggle="collapse" data-bs-target="#stagingDropdown"><i class="fa-solid fa-angle-down"></i></div>                           
                         </div>
-                        <div id="stagingDetail" class="collapse p-4 pb-0">
+                        <div id="stagingDropdown" class="collapse p-4 pb-0">
                             <p>The finish line is so close!</p>                       
                             <p>We'll bring in our crew to get the house looking perfect and take care of everything along the way.</p>
                         </div>                        
