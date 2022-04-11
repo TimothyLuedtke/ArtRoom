@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link href="style.css" rel="stylescheet">
+    <link href="style.scss" rel="sass stylescheet">
 
     <title>artRoom Home Staging</title>
 </head>
 <body>
+
+<section class=" bg-header"   style="background-image: url('images/headerPhoto.jpg'); background-repeat: no-repeat;
+ background-position: center center;
+ background-attachment: fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; ">   
 <!--Nav-->  
-    <nav class="navbar navbar-dropdown navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-dropdown navbar-expand-lg navbar-dark">
         <div class="container-fluid">          
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,25 +46,24 @@
 
                 </ul>
 
-            <div class="navbar-buttons"><a class="btn btn-primary" href="#contactUs">Contact</a> </div>
+            <div class="navbar-buttons"><a class="btn btn-outline-light" href="#contactUs">Contact</a> </div>
         </div>
     </nav>
 
     <!--header-->      
     <section class="container-fluid">
-        <img class=" img-fluid" src="images/headerPhoto.jpg">
+        
         <div>
-            <div class=" row justify-content-center">
-
-                <div class=" col-md-6 text-center">
-                    <h1 class="display-1" >artRoom</h1>
-                    <h4>A Twin Cities Residential Staging Company</h4>
-                    <p><strong>Our mission</strong> is to help clients navigate options for marketing their home to maximize their overall profit.</p>
-                    <div class=" mt-3">
-                        <a class="btn btn-warning" href=#contactUs>
+            <div class="row justify-content-center"  >
+                <div class=" mt-5 mb-3 pt-5 col-md-6 text-center text-light">
+                    <h1 class="m-5 pt-5 display-1" >artRoom</h1>
+                    <h4 class="my-3">A Twin Cities Residential Staging Company</h4>
+                    <p class="my-3"><strong>Our mission</strong> is to help clients navigate options for marketing their home to maximize their overall profit.</p>
+                    <div class=" pt-5 my-3">
+                        <a class="btn btn-warning text-light" href=#contactUs>
                             Contact
                         </a> 
-                        <a class="btn btn-white-outline" href=#processOverview>
+                        <a class="btn btn-white-outline text-light" href=#processOverview>
                             learn more &gt;
                         </a>
                     </div>      
@@ -65,80 +72,112 @@
         </div>    
     </section>
 
+</section>    
+
     <!--Process Overview Timeline-->
-    <section class="container bg-light my-4 mb-4 rounded" id="processOverview">
-        <div class="row justify-content-center">
+    <section class="container overflow-hidden" id="processOverview">        
+        <!--Process Title-->
+        <div class="row pt-4 pb-2 my-4 text-center">
+            <h1 class="display-3 text-capitalize" >Process</h1>
+            <h5 class="display-6">Reflecting Uniqueness in every home.</h5>                    
+        </div>
+        
+        <div class="row justify-content-around">
+            <!--Consult Step-->            
+            <div class="col-sm-12 col-md-4" id="consultDetail">
+                <div class="m-2 bg-light rounded pb-4">            
+                    <div class="py-4 d-flex justify-content-center">   
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto1.jpg" alt="Consultation Photo">
+                    </div>
 
-            <div class="col-md-12 col-lg-9 py-4 my-4 text-center">
-                        <h1 class="display-3" >Process</h1>
-                        <h5>Reflecting uniqueness in every home.</h5>
-                        <h2 class="mt-md-4"><i class="fa-solid fa-arrow-down-long"></i></h2>
+                    <div>    
+                        <div class="text-center ">
+                            <h2 class="display-4">Consult</h2>
+                            <h5 class="py-2">Plan the stage</h5>
+                            <div type="button"  data-bs-toggle="collapse" data-bs-target="#consultDropdown"><i class="fa-solid fa-angle-down"></i></div>
+                        </div>
+                        <div id="consultDropdown" class="collapse p-4 pb-0">
+                            <p>Is the home empty?</p>
+                            <p>Do you still live in your home?</p>                        
+                            <p>Prefer a partial stage?</p>                               
+                            <p>There are a ton of ways to get a home prepared for market, 
+                                and a different levels of work each requires.
+                            We understand what's best for you is a number of conversations.
+                             We'll customize a plan with your specific needs in mind.
+                             </p>
+                        </div>
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-12 col-md-8">
+            <!--Prep Step-->
+            <div class="col-sm-12 col-md-4" id="prepDetail">
+                <div class="m-2 pb-4 bg-light rounded">              
+                    <div class="py-4 d-flex justify-content-center">   
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto2.jpg" alt="Preperation Photo">
+                    </div>
 
-                <div class="row justify-content-center text-center mb-4">
-                    <img class="img-fluid col-5 mx-4 rounded-circle" src="images/processPhoto1.jpg" alt="Consultation Photo">
-                    <div class="my-4" type="button" data-bs-toggle="collapse" data-bs-target="#consultDetail">
-                        <h2 class="display-4">Consultation</h2>
-                        <h5 >Discuss the preparations for getting the home ready for staging.</h5>
-                        <h2><i class="fa-solid fa-arrow-down-long"></i></h2>
+                    <div class="text-center">    
+                        <div class="">
+                            <h2 class="display-4">Prep</h2>
+                            <h5 class="py-2">Set the stage</h5>
+                            <div type="button"  data-bs-toggle="collapse" data-bs-target="#prepDropdown"><i class="fa-solid fa-angle-down"></i></div>
+                        </div>
+
+                        <div id="prepDropdown" class="collapse p-4 pb-0">
+                            <p>Most of the items on this checklist will come directly from our earlier conversations.</p> 
+                            <p>There are steps that are always necessary before selling including decluttering and cleaning.</p>
+                            <p>You may choose to take on tasks yourself or ask us to use our vast network of industry professionals. 
+                            From cleaning to painting, we're happy to help.</p>
+                        </div>
                     </div>
-                    <div id="consultDetail" class="collapse mb-4">
-                        <p>Is the home empty?</p>
-                        <p>Do you still live in your home?</p>                        
-                        <p>Prefer a partial stage?</p>                               
-                        <p>There are a ton of ways to get a home prepared for market, 
-                            and a different levels of work each requires.
-                        We understand what's best for you is a number of conversations.
-                         We'll customize a plan with your specific needs in mind.
-                         </p>
-                    </div>
-                </div>                
-                <div class="row justify-content-center text-center">
-                    <img class="img-fluid col-6 mx-4 rounded-circle" src="images/processPhoto2.jpg" alt="Preperation Photo">
-                    <div class="my-4" type="button" data-bs-toggle="collapse" data-bs-target="#prepDetail">
-                        <h2 class="display-4">Preparation</h2>
-                        <h5 class="">Complete the preparations discussed during the consultation phase.</h5>
-                        <h2><i class="fa-solid fa-arrow-down-long"></i></h2>
-                    </div>
-                    
-                    <div id="prepDetail" class="collapse mb-4">
-                        <p>Most of the items on this checklist will come directly from our earlier conversations.</p> 
-                        <p>There are steps that are always necessary before selling including decluttering and cleaning.</p>
-                        <p>You may choose to take on tasks yourself or ask us to use our vast network of industry professionals. 
-                        From cleaning to painting, we're happy to help.</p>
-                    </div>
-                </div>                
-                <div class="row justify-content-center text-center mb-4">
-                    <img class=" img-fluid col-6 mx-4 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
-                    <div class="my-4" type="button" data-bs-toggle="collapse" data-bs-target="#stagingDetail">
-                        <h2 class="display-4">Staging</h2>
-                        <h5 class="">Sit back and give us the space to work our magic.</h5>                            
-                    </div>
-                    <div id="stagingDetail" class="collapse mb-4">
-                        <p>The finish line is so close!</p>                       
-                        <p>We'll bring in our crew to get the house looking perfect and take care of everything along the way.</p>
-                    </div>                        
-                </div>
+                </div>    
             </div>
+
+            <!--Staging Step-->
+            <div class="col-sm-12 col-md-4" id="stagingDetail">
+                <div class="m-2 pb-4 bg-light rounded">              
+                    <div class="py-4 d-flex justify-content-center">  
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
+                    </div>
+
+                    <div class="text-center">    
+                        <div class="">
+                            <h2 class="display-4">Stage</h2>
+                            <h5 class="py-2">Stage</h5> 
+                            <div type="button" data-bs-toggle="collapse" data-bs-target="#stagingDropdown"><i class="fa-solid fa-angle-down"></i></div>                           
+                        </div>
+                        <div id="stagingDropdown" class="collapse p-4 pb-0">
+                            <p>The finish line is so close!</p>                       
+                            <p>We'll bring in our crew to get the house looking perfect and take care of everything along the way.</p>
+                        </div>                        
+                    </div>
+                </div>    
+            </div>
+
         </div>
     </section>
+
+            <!--Arrow Down-->
+           <!-- <div>
+                <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
+            </div> -->
+
     <!--Portfolio Carousel Section-->
-    <section class="container-fluid g-0" id="portfolioCarousel">
+    <section class="container-fluid g-0 my-4" id="portfolioCarousel">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/stagedRoom1.jpg" class="d-block w-100" alt="...">
+            <img src="images/stagedRoom1.jpg" class="d-block w-100" alt="staged room">
           </div>
           <div class="carousel-item">
-            <img src="images/stagedRoom2.jpg" class="d-block w-100" alt="...">
+            <img src="images/stagedRoom2.jpg" class="d-block w-100" alt="staged room 2">
           </div>
           <div class="carousel-item">
-            <img src="images/stagedRoom3.jpg" class="d-block w-100" alt="...">
+            <img src="images/stagedRoom3.jpg" class="d-block w-100" alt="staged room 3">
           </div>
           <div class="carousel-item">
-            <img src="images/stagedRoom4.jpg" class="d-block w-100" alt="...">
+            <img src="images/stagedRoom4.jpg" class="d-block w-100" alt="staged room 4">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -158,10 +197,8 @@
             <div class="col-4 py-4 px-md-4">             
                 <img class="img-fluid rounded-circle" src="images/contactPhoto.jpg" alt="Contact Us Picture">               
             </div>            
-            <div class="col-sm-9 col-md-8 px-md-4 " data-form-type="formoid">
-                <form action="https://mobirise.eu/" method="POST" class="" 
-                    data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" 
-                    value="E4NQBKV0KuUD/C0k9ATj21+6/GqxaGsB78ypXRFE+Q1xvGy7KWXKY27J/7OBeKPXzYamdUJzFyCcRXOj5VB2nBY6lbpfrVjbkuHWsEQ5sE1OWK+sA8dNazCEs498kPhK">
+            <div class="col-sm-9 col-md-8 px-md-4" data-form-type="formoid">
+                <form name="contact" netlify>
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">
                             Thanks for filling out the form!</div>
@@ -169,21 +206,21 @@
                             Oops...! some problem!
                         </div>
                     </div>
-                    <div class="row text-center px-md-5 px-lg-5">                        
+                    <div class="row text-center px-md-5 mx-md-5 px-lg-5 mx-lg-5">                        
                             <h1 class="display-4">
                             Contact Us
                             </h1>                        
                         <div class="">
                             <p class="display-7">
-                                Send us a line to get the conversation started:</p>
+                                Start The Conversation:</p>
                         </div>
-                        <div class=" mb-3" data-for="name">
+                        <label class=" mb-3" data-for="name">
                             <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form4-p">
-                        </div>
-                        <div class=" mb-3" data-for="email">
+                        </label>
+                        <label class=" mb-3" data-for="email">
                             <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form4-p">
-                        </div>
-                        <div class=""><button type="submit" class="btn btn-warning display-4">Submit</button></div>
+                        </label>
+                        <div class=""><button type="submit" class="btn btn-outline-dark display-4">Submit</button></div>
                     </div>
                 </form>
             </div>          
