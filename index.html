@@ -54,6 +54,7 @@ background-size: cover; ">
 
                     <div class="navbar-buttons"><a class="btn btn-outline-light" href="#contactUs">Contact</a> </div>
                 </div>
+            </div>
         </nav>
 
         <!--header-->
@@ -91,15 +92,16 @@ background-size: cover; ">
         <div class="row justify-content-around">
             <!--Consult Step-->
             <div class="col-sm-12 col-md-4" id="consultDetail">
-                <div class="m-2 bg-light rounded pb-4">
+                <div class="m-2 bg-light rounded pb-4" type="button" data-bs-toggle="modal"
+                    data-bs-target="#consultDropdown">
                     <div class="py-4 d-flex justify-content-center">
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#consultDropdown" class="img-fluid w-50 rounded-circle" src="images/processPhoto1.jpg"
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto1.jpg"
                             alt="Consultation Photo">
                     </div>
 
                     <div>
                         <div class="text-center ">
-                            <div type="button" data-bs-toggle="modal" data-bs-target="#consultDropdown">
+                            <div>
                                 <h2 class="display-4">Consult</h2>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
@@ -137,14 +139,15 @@ background-size: cover; ">
 
             <!--Prep Step-->
             <div class="col-sm-12 col-md-4" id="prepDetail">
-                <div class="m-2 pb-4 bg-light rounded">
+                <div class="m-2 pb-4 bg-light rounded" type="button" data-bs-toggle="modal"
+                    data-bs-target="#prepDropdown">
                     <div class="py-4 d-flex justify-content-center">
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#prepDropdown" class="img-fluid w-50 rounded-circle" src="images/processPhoto2.jpg"
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto2.jpg"
                             alt="Preperation Photo">
                     </div>
                     <div>
                         <div class="text-center">
-                            <div type="button" data-bs-toggle="modal" data-bs-target="#prepDropdown">
+                            <div>
 
                                 <h2 class="display-4">Prep</h2>
                                 <i class="fa-solid fa-angle-down"></i>
@@ -182,15 +185,15 @@ background-size: cover; ">
 
             <!--Staging Step-->
             <div class="col-sm-12 col-md-4" id="stagingDetail">
-                <div class="m-2 pb-4 bg-light rounded">
+                <div class="m-2 pb-4 bg-light rounded" type="button" data-bs-toggle="modal"
+                    data-bs-target="#stagingDropdown">
                     <div class="py-4 d-flex justify-content-center">
-                        <img type="button" data-bs-toggle="modal" data-bs-target="#stagingDropdown"
-                            class="img-fluid w-50 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
+                        <img class="img-fluid w-50 rounded-circle" src="images/processPhoto3.jpg" alt="Staging Photo">
                     </div>
 
                     <div>
                         <div class="text-center">
-                            <div type="button" data-bs-toggle="modal" data-bs-target="#stagingDropdown">
+                            <div>
                                 <h2 class="display-4">Stage</h2>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
@@ -199,15 +202,19 @@ background-size: cover; ">
                             <!-- modal  -->
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
+                                    <div class="py-4 d-flex justify-content-center">
+                                        <img class="h-25 card-img-top" src="images/processPhoto3.jpg"
+                                            alt="Staging Photo">
+                                    </div>
                                     <div class="text-center modal-title">
-                                        <h5 class="display-4 pt-4">Staging</h5>
+                                        <h5 class="display-4">Staging</h5>
                                     </div>
                                     <div class="modal-body">
                                         <p>Staging is the process of preparing your home for sale. It's
                                             a
                                             combination of decluttering, cleaning, and decorating.
                                         </p>
-                                        <p>Staging is a great way to make your home stand out from the
+                                        <p>Staging is a great way to 75make your home stand out from the
                                             competition and help you achieve your goals.
                                         </p>
                                         <p>Our team will work with you to create a plan that fits your
