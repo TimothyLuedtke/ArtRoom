@@ -86,7 +86,7 @@ background-size: cover; ">
     <section class="container overflow-hidden" id="processOverview">
         <!--Process Title-->
         <div class="row pt-4 pb-2 my-4 text-center">
-            <h1 class="display-3 text-capitalize">Process</h1>
+            <h1 class="display-3">Process</h1>
         </div>
 
         <div class="row justify-content-around">
@@ -100,7 +100,7 @@ background-size: cover; ">
                     </div>
 
                     <div>
-                        <h2 class="text-center display-4">Consult</h2>
+                        <h2 class="text-center display-5">Consult</h2>
                         <div id="consultDropdown" class="modal fade">
                             <!-- modal  -->
                             <div class="modal-dialog modal-dialog-centered">
@@ -141,7 +141,7 @@ background-size: cover; ">
                             alt="Preperation Photo">
                     </div>
                     <div>
-                        <h2 class="text-center display-4">Prep</h2>
+                        <h2 class="text-center display-5">Prep</h2>
                         <div id="prepDropdown" class="modal fade">
                             <!-- modal  -->
                             <div class="modal-dialog modal-dialog-centered">
@@ -180,7 +180,7 @@ background-size: cover; ">
                     </div>
 
                     <div>
-                        <h2 class="text-center display-4">Stage</h2>
+                        <h2 class="text-center display-5">Stage</h2>
                         <div id="stagingDropdown" class="modal fade">
                             <!-- modal  -->
                             <div class="modal-dialog modal-dialog-centered">
@@ -214,11 +214,6 @@ background-size: cover; ">
 
             </div>
     </section>
-
-    <!--Arrow Down-->
-    <!-- <div>
-                <h2 class="row text-center"><i class="fa-solid fa-arrow-down-long"></i></h2>   
-            </div> -->
 
     <!--Portfolio Carousel Section-->
     <section class="container-fluid g-0 my-4" id="portfolioCarousel">
@@ -262,10 +257,26 @@ background-size: cover; ">
                         <h1 class="display-4">Contact Us</h1>
                         <p class="display-7">Start The Conversation:</p>
                         <label class=" mb-3">
-                            <input type="text" name="name" placeholder="Name">
+                            <input class="col-12" type="text" name="name" placeholder="Name">
                         </label>
                         <label class=" mb-3" data-for="email">
-                            <input type="email" name="email" placeholder="Email">
+                            <input class="col-12" type="email" name="email" placeholder="Email">
+                        </label>
+                        <label class="mb-3 col-12">
+                            <input type="text" class="form-control" name="Address" placeholder="Address 1">
+                        </label>
+                        <label class="mb-3 col-12">
+
+                            <input type="text" class="form-control" name="Address2" placeholder="Address 2">
+                        </label>
+                        <label class="mb-3 col-md-6">
+                            <input class="col-12" type="text" class="form-control" name="City" placeholder="City">
+                        </label>
+                        <label class="mb-3 col-md-3">
+                            <input class="col-12" type="text" class="form-control" name="Zip Code" placeholder="Zip">
+                        </label>
+                        <label class=" mb-3" data-for="message">
+                            <textarea class="col-12" name="message" placeholder="Message" rows="4"></textarea>
                         </label>
                         <div><button type="submit" class="btn btn-outline-dark display-4 m-4">Submit</button></div>
                     </div>
