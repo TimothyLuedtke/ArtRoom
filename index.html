@@ -331,7 +331,7 @@
                                                             </button>
                                                         </div>
 
-                                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                                        <div id="collapseOne" class="accordion-collapse collapse show"
                                                             aria-labelledby="headingOne"
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
@@ -379,7 +379,7 @@
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
                                                                 <div class="row">
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-6">
                                                                         <label for="propertyType">Property Type</label>
                                                                         <select class="form-select" name="propertyType"
                                                                             id="propertyType" required>
@@ -393,12 +393,16 @@
                                                                             </option>
                                                                         </select>
                                                                     </div>
-                                                                    <div class="col-md-6">
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
                                                                         <label for="address">Address</label>
                                                                         <input class="form-control" type="text"
                                                                             name="address" id="address"
                                                                             placeholder="Street Address" required>
                                                                     </div>
+                                                                </div>
+                                                                <div class="row">
                                                                     <div class="col-md-6">
                                                                         <label for="city">City</label>
                                                                         <input class="form-control" type="text"
@@ -407,13 +411,14 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-md-6">
+                                                                    <div class="">
                                                                         <label for="state">State</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="state" id="state" placeholder="State"
-                                                                            required>
+                                                                        <select class="form-select" name="state"
+                                                                            id="state" required>
+                                                                            <option value="MN">MN</option>
+                                                                            <option value="WI">WI</option>
                                                                     </div>
-                                                                    <div class="col-md-6">
+                                                                    <div class="">
                                                                         <label for="zip">Zip</label>
                                                                         <input class="form-control" type="text"
                                                                             name="zip" id="zip" placeholder="Zip"
