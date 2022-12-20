@@ -322,9 +322,10 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="accordion accordion-flush" id="requestStagingAccordion">
+                                                    <!-- Contact Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingOne">
-                                                            <button class="accordion-button" type="button"
+                                                            <button class="accordion-button btn-close-white" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                                 aria-expanded="true" aria-controls="collapseOne">
                                                                 <h5 class="">Contact</h5>
@@ -336,13 +337,13 @@
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
                                                                 <div class="row">
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-6">
                                                                         <label for="firstName">First Name</label>
                                                                         <input class="form-control" type="text"
                                                                             name="firstName" id="firstName"
                                                                             placeholder="First Name" required>
                                                                     </div>
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-6">
                                                                         <label for="lastName">Last Name</label>
                                                                         <input class="form-control" type="text"
                                                                             name="lastName" id="lastName"
@@ -366,9 +367,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- Property Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingTwo">
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button collapsed btn-close-white" type="button"
                                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                                 aria-expanded="false" aria-controls="collapseTwo">
                                                                 <h5 class="">Property</h5>
@@ -378,6 +380,7 @@
                                                             aria-labelledby="headingTwo"
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
+                                                                <!-- Address Row -->
                                                                 <div class="row">
                                                                     <div class="col-12">
                                                                         <label for="address">Address</label>
@@ -386,6 +389,7 @@
                                                                             placeholder="Street Address" required>
                                                                     </div>
                                                                 </div>
+                                                                <!-- City/State/Zip Row -->
                                                                 <div class="row">
                                                                     <div class="col-md-6 col-sm-12">
                                                                         <label for="city">City</label>
@@ -393,7 +397,8 @@
                                                                             name="city" id="city" placeholder="City"
                                                                             required>
                                                                     </div>
-                                                                    <div class="col-md-2 col-sm-4">
+
+                                                                    <div class="col-md-3 col-sm-4">
                                                                         <label for="state">State</label>
                                                                         <select class="form-select" name="state"
                                                                             id="state" required>
@@ -406,9 +411,9 @@
                                                                         <input class="form-control" type="text"
                                                                             name="zip" id="zip" placeholder="Zip"
                                                                             required>
-                                                                        
                                                                     </div>
                                                                 </div>
+                                                                <!-- Property Type/Vacancy Row -->
                                                                 <div class="row">
                                                                     <div class="col-6">
                                                                         <label for="propertyType">Property Type</label>
@@ -425,7 +430,7 @@
                                                                         </select>
                                                                     </div>
                                                                     <div class="col-6">
-                                                                        <label for="propertyType">Vacant?</label>
+                                                                        <label for="propertyType">Vacancy</label>
                                                                         <select class="form-select" name="propertyType"
                                                                             id="propertyType" required>
                                                                             <option value="Single Family">Occupied
@@ -434,14 +439,15 @@
                                                                         </select>
                                                                     </div>
                                                                 </div>
+                                                                <!-- Bed/Bath Row -->
                                                                 <div class="row">
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-6">
                                                                         <label for="bedrooms">Bedrooms</label>
                                                                         <input class="form-control" type="number"
                                                                             name="bedrooms" id="bedrooms"
                                                                             placeholder="0+" required>
                                                                     </div>
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-6">
                                                                         <label for="bathrooms">Bathrooms</label>
                                                                         <input class="form-control" type="number"
                                                                             name="bathrooms" id="bathrooms"
@@ -451,9 +457,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- Staging Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingThree">
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button collapsed btn-close-white" type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#collapseThree" aria-expanded="false"
                                                                 aria-controls="collapseThree">
@@ -464,32 +471,38 @@
                                                             aria-labelledby="headingThree"
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
-                                                                <label for="stagingType">Staging
-                                                                    Type</label>
-                                                                <select class="form-select" name="stagingType"
-                                                                    id="stagingType" required>
-                                                                    <option value="Full Stage">Full
-                                                                        Staging
-                                                                    </option>
-                                                                    <option value="Partial Stage">
-                                                                        Partial Staging
-                                                                    </option>
-
-                                                                    <option value="Staging Consultation">
-                                                                        Staging
-                                                                        Consultation</option>
-                                                                </select>
-                                                                <div class="col-md-6">
-                                                                    <label for="requestForDate">Date</label>
-                                                                    <input class="form-control" type="date"
-                                                                        name="requestForDate" id="requestForDate"
-                                                                        required>
+                                                                <!-- Staging Type/Date Row -->
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <label for="stagingType">Staging Type</label>
+                                                                        <select class="form-select" name="stagingType"
+                                                                            id="stagingType" required>
+                                                                            <option value="Consultation">
+                                                                                Consultation</option>
+                                                                            <option value="Full Stage">Full Stage
+                                                                            </option>
+                                                                            <option value="Partial Stage">Partial
+                                                                                Stage</option>
+                                                                            <option value="Redesign">Redesign</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <label for="requestForDate">Date</label>
+                                                                        <input class="form-control" type="date"
+                                                                            name="requestForDate" id="requestForDate"
+                                                                            required>
+                                                                    </div>
                                                                 </div>
-
-                                                                <label for="stagingNotes">Notes</label>
-                                                                <textarea class="form-control" name="stagingNotes"
-                                                                    id="stagingNotes" rows="3"
-                                                                    placeholder="Additional Notes"></textarea>
+                                                                <!-- Staging Notes Row -->
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label for="stagingNotes">Notes</label>
+                                                                        <textarea class="form-control"
+                                                                            name="stagingNotes" id="stagingNotes"
+                                                                            rows="3"
+                                                                            placeholder="Additional Notes"></textarea>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
