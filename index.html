@@ -379,6 +379,35 @@
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
                                                                 <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label for="address">Address</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="address" id="address"
+                                                                            placeholder="Street Address" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-5">
+                                                                        <label for="city">City</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="city" id="city" placeholder="City"
+                                                                            required>
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <label for="state">State</label>
+                                                                        <select class="form-select" name="state"
+                                                                            id="state" required>
+                                                                            <option value="MN">MN</option>
+                                                                            <option value="WI">WI</option>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <label for="zip">Zip</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="zip" id="zip" placeholder="Zip"
+                                                                            required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
                                                                     <div class="col-6">
                                                                         <label for="propertyType">Property Type</label>
                                                                         <select class="form-select" name="propertyType"
@@ -393,36 +422,14 @@
                                                                             </option>
                                                                         </select>
                                                                     </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <label for="address">Address</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="address" id="address"
-                                                                            placeholder="Street Address" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <label for="city">City</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="city" id="city" placeholder="City"
-                                                                            required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="">
-                                                                        <label for="state">State</label>
-                                                                        <select class="form-select" name="state"
-                                                                            id="state" required>
-                                                                            <option value="MN">MN</option>
-                                                                            <option value="WI">WI</option>
-                                                                    </div>
-                                                                    <div class="">
-                                                                        <label for="zip">Zip</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="zip" id="zip" placeholder="Zip"
-                                                                            required>
+                                                                    <div class="col-6">
+                                                                        <label for="propertyType">Vacant?</label>
+                                                                        <select class="form-select" name="propertyType"
+                                                                            id="propertyType" required>
+                                                                            <option value="Single Family">Occupied
+                                                                            </option>
+                                                                            <option value="Townhouse">Vacant</option>
+                                                                        </select>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
@@ -436,14 +443,6 @@
                                                                         <label for="bathrooms">Bathrooms</label>
                                                                         <input class="form-control" type="number"
                                                                             name="bathrooms" id="bathrooms"
-                                                                            placeholder="0+" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <label for="squareFeet">Square Feet</label>
-                                                                        <input class="form-control" type="number"
-                                                                            name="squareFeet" id="squareFeet"
                                                                             placeholder="0+" required>
                                                                     </div>
                                                                 </div>
