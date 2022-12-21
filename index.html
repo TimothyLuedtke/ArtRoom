@@ -174,7 +174,7 @@
                             <h2 class="text-center display-5">Stage</h2>
                             <div id="stagingDropdown" class="modal fade">
                                 <!-- modal  -->
-                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-dialog modal-dialog-centered ">
                                     <div class="modal-content">
                                         <div class="pb-4 d-flex justify-content-center">
                                             <img class=" card-img-top" src="images/processPhoto3.jpg"
@@ -206,7 +206,6 @@
 
                 </div>
         </section>
-
         <!--Portfolio Carousel Section-->
         <section class="container-fluid g-0 my-4" id="portfolioCarousel">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -236,10 +235,8 @@
                 </button>
             </div>
         </section>
-
         <!--Contact Us Section-->
         <section id="contactUs">
-
             <div class="container bg-light my-4">
                 <div class="row justify-content-center align-items-center my-4 p-md-4">
                     <div class="col-4 my-2 px-md-4">
@@ -306,7 +303,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!-- Request Modal -->
                             <div class="modal fade" id="requestStagingModal" tabindex="-1"
                                 aria-labelledby="requestStagingModal" aria-hidden="true">
@@ -325,9 +321,10 @@
                                                     <!-- Contact Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingOne">
-                                                            <button class="accordion-button btn-close-white" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                            <button class="accordion-button btn-close-white"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                                aria-controls="collapseOne">
                                                                 <h5 class="">Contact</h5>
                                                             </button>
                                                         </div>
@@ -370,9 +367,10 @@
                                                     <!-- Property Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingTwo">
-                                                            <button class="accordion-button collapsed btn-close-white" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                            <button class="accordion-button collapsed btn-close-white"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
                                                                 <h5 class="">Property</h5>
                                                             </button>
                                                         </div>
@@ -380,39 +378,6 @@
                                                             aria-labelledby="headingTwo"
                                                             data-bs-parent="#requestStagingAccordion">
                                                             <div class="accordion-body">
-                                                                <!-- Address Row -->
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <label for="address">Address</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="address" id="address"
-                                                                            placeholder="Street Address" required>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- City/State/Zip Row -->
-                                                                <div class="row">
-                                                                    <div class="col-md-6 col-sm-12">
-                                                                        <label for="city">City</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="city" id="city" placeholder="City"
-                                                                            required>
-                                                                    </div>
-
-                                                                    <div class="col-md-3 col-sm-4">
-                                                                        <label for="state">State</label>
-                                                                        <select class="form-select" name="state"
-                                                                            id="state" required>
-                                                                            <option value="MN">MN</option>
-                                                                            <option value="WI">WI</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-4">
-                                                                        <label for="zip">Zip</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="zip" id="zip" placeholder="Zip"
-                                                                            required>
-                                                                    </div>
-                                                                </div>
                                                                 <!-- Property Type/Vacancy Row -->
                                                                 <div class="row">
                                                                     <div class="col-6">
@@ -454,14 +419,47 @@
                                                                             placeholder="0+" required>
                                                                     </div>
                                                                 </div>
+                                                                <!-- Address Row -->
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label for="address">Address</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="address" id="address"
+                                                                            placeholder="Street Address" required>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- City/State/Zip Row -->
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-sm-12">
+                                                                        <label for="city">City</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="city" id="city" placeholder="City"
+                                                                            required>
+                                                                    </div>
+
+                                                                    <div class="col-md-3 col-sm-4">
+                                                                        <label for="state">State</label>
+                                                                        <select class="form-select" name="state"
+                                                                            id="state" required>
+                                                                            <option value="MN">MN</option>
+                                                                            <option value="WI">WI</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-4">
+                                                                        <label for="zip">Zip</label>
+                                                                        <input class="form-control" type="text"
+                                                                            name="zip" id="zip" placeholder="Zip"
+                                                                            required>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <!-- Staging Tab -->
                                                     <div class="accordion-item">
                                                         <div class="accordion-header" id="headingThree">
-                                                            <button class="accordion-button collapsed btn-close-white" type="button"
-                                                                data-bs-toggle="collapse"
+                                                            <button class="accordion-button collapsed btn-close-white"
+                                                                type="button" data-bs-toggle="collapse"
                                                                 data-bs-target="#collapseThree" aria-expanded="false"
                                                                 aria-controls="collapseThree">
                                                                 <h5 class="">Details</h5>
@@ -522,11 +520,7 @@
                 </div>
             </div>
         </section>
-
-
-
         <!--Footer-->
-
         <section class="container-fluid mt-3 px-0 bg-dark">
             <ul class="d-flex justify-content-center pt-3 list-unstyled text-muted">
                 <li><a class="nav-link text-start text-white" href=#menu><i class="fa-solid fa-house-chimney"></i></a>
@@ -545,9 +539,6 @@
                         href="https://github.com/TimothyLuedtke">Timothy Luedtke</a> </p>
             </div>
         </section>
-
-
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
