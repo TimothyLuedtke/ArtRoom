@@ -1,2 +1,2 @@
 # ArtRoom
-Responsive website using Bootstrap and Netlify's form control.
+Responsive website with HTML using Bootstrap5 CSS styling and hosted on Netlify.
